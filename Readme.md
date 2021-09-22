@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сабина  Самбурова](https://up.htmlacademy.ru/htmlcss/32/user/1848487).
-* Наставник: `Дмитрий Иовлев`.
+* Наставник: [Дмитрий Иовлев].(https://htmlacademy.ru/profile/skywalker) .
 
 ---
 
