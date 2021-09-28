@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+<header class="page-header"> 
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="main.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+           <li class="navigation-item">
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+          </li>
+           <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="main-inner">
+
+<section class="hotels-inner">
+  <h1 class="title-inner">Гостиницы Седоны</h1>
+  <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="Домик" src="#">
+        </a>
+<span class="hotels-inner">Гостиницы</span>
+
+<p class="infrastructure"><b>Инфраструктура:</b></p>
+<p class="checkbox"><input type="checkbox" name="a" value="Pool" checked>Бассейн</p>
+<p class="checkbox"><input type="checkbox" name="a" value="Parking" checked>Парковка</p>
+<p class="checkbox"><input type="checkbox" name="a" value="WI-FI" >WI-FI</p>
+
+<p class="accommodation"><b>Тип жилья:</b></p>
+<p class="accommodation"><input type="radio" name="a" value="Hotel" checked>Гостиница</p>
+<p class="accommodation"><input type="radio" name="a" value="Motel">Мотель</p>
+<p class="accommodation"><input type="radio" name="a" value="Apartments">Апартаменты</p>
+
+<p class="price">Стоимость, ₽:</p>
+ <label class="catalog-filter-label">0
+  <input class="catalog-filter-input" type="number" name="min-price" placeholder="от">
+ </label>
+ 
+ <label class="catalog-filter-label">9000
+   <input class="catalog-filter-input" type="number" name="max-price" placeholder="до">
+ </label>
+ <button class="range-toggle toggle-min" type="button">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button class="range-toggle toggle-max" type="button">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+ <input type="range" min="0" max="100" step="1" value="80"> 
+
+<button class="button-inner" type="submit">Применить</button>
+<a href="#">Сбросить</a>
+</section>
+
+<section class="hotels-search">
+  <h2 class="search-title-inner">Найдено гостиниц: 38</h2>
+  <form class="sorting-type">
+    <label class="visually-hidden" for="sorting">Сортировка</label>
+  <select class="select-control" id="sorting" name="sorting">
+    <option value="cheap">Сначала дешевые</option>
+    <option value="expensive">Сначала дорогие</option>
+  </select>
+  <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+</form>
+   <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать крупные карточки</span>
+        </a>
+         <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+</section>
+
+<section class="catalog-list">
+ <ul class="product-list">
+ <li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="#" alt="hotel-picture">
+              <h3 class="product-card-title">Amara Resort & Spa</h3>
+            </a>
+            <span class="description">Гостиница</span>
+            <span class="product-card-price">От 4000 ₽</span>
+            <a href="#" class="product-card-button button">подробнее</a>
+            <a href="#" class="product-card-button button">в избранное</a>
+            <span class="rating">Рейтинг: 8,5</span>
+          </li>
+
+<li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="#" alt="hotel-picture">
+              <h3 class="product-card-title">Desert Quail Inn</h3>
+            </a>
+            <span class="description">Мотель</span>
+            <span class="product-card-price">От 3000 ₽</span>
+            <a href="#" class="product-card-button button">подробнее</a>
+            <a href="#" class="product-card-button button">в избранное</a>
+            <span class="rating">Рейтинг: 8,9</span>
+          </li>
+
+<li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="#" alt="hotel-picture">
+              <h3 class="product-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <span class="description">Апартаменты</span>
+            <span class="product-card-price">От 2000 ₽</span>
+            <a href="#" class="product-card-button button">подробнее</a>
+            <a href="#" class="product-card-button button">в избранном</a>
+            <span class="rating">Рейтинг: 9,2</span>
+          </li>
+
+<li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="#" alt="hotel-picture">
+              <h3 class="product-card-title">GreenTree Inn</h3>
+            </a>
+            <span class="description">Гостиница</span>
+            <span class="product-card-price">От 3000 ₽</span>
+            <a href="#" class="product-card-button button">подробнее</a>
+            <a href="#" class="product-card-button button">в избранноe</a>
+            <span class="rating">Рейтинг: 9,2</span>
+          </li>
+</ul>
+    <button class="button" type="button">Загрузить еще</button> 
+</section>
+
+
+<section class="pages">
+  
+  <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              <span class="visually-hidden">10</span>
+            </a>
+          </li>
+        </ul>
+<span class="pagination">Гостиниц на странице:</span>
+<form class="pages-shown">
+  <select class="select-control" id="pages-shown" name="showing">
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</form>
+</section>
+
+<section class="form">
+        <h3 class="form">Подпишитесь на рассылку</h3>
+        <p class="form">Только полезная информация и никакого спама,честное бойскаутское!</p>
+        <form class="subscribe">
+          <label for="e-mail-form"></label>
+          <input type="text" id="#" name="e-mail-form" placeholder="Ваш e-mail">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+
+      <section class="social">
+        <h2 class="page-footer-title">Социальные сети</h2>
+      </section>
+
+      <section class="phone-number">
+        <h2 class="phone-number-title">+7 (812) 812-12-12</h2>
+      </section>
+
+      <section class="website">
+        <h2 class="website-title">.html<br>academy</h2>
+      </section>
+      
+    </footer>
+  </body>
+</html>
