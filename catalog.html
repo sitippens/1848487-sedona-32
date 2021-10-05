@@ -30,10 +30,11 @@
     <section class="hotels-inner">
       <h1 class="title-inner">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
-      <li class="breadcrumbs-item"><a class="visually-hidden breadcrumbs-link" href="index.html">Домой</a></li>
-      <li class="breadcrumbs-item"><a class="breadcrumbs-link">Гостиницы</a></li>        
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">
+          <span class="visually-hidden">Домой</span></a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link">Гостиницы</a></li>        
       </ul>
-      <form class="hotels-catalog">
+      <form action="https://echo.htmlacademy.ru" method="POST" class="hotels-catalog">
         <fieldset class="hotels-catalog-group">
           <legend class="hotels-catalog-title">Инфраструктура</legend>
           <input type="checkbox" id="Pool" name="Pool" checked>
@@ -45,11 +46,11 @@
         </fieldset>
         <fieldset class="hotels-catalog-group">
           <legend class="hotels-catalog-title">Тип жилья</legend>
-          <input type="radio" id="Hotel" name="Hotel" checked>
+          <input type="radio" id="Hotel" name="accommodation" value="Hotel" checked>
           <label for="Hotel">Гостиница</label>
-          <input type="radio" id="Motel" name="Motel">
+          <input type="radio" id="Motel" name="accommodation" value="Motel">
           <label for="Motel">Мотель</label>
-          <input type="radio" id="Apartments" name="Apartments">
+          <input type="radio" id="Apartments" name="accommodation" value="Apartments">
           <label for="Apartments">Апартаменты</label>      
         </fieldset>
         <fieldset class="hotels-catalog-group">
@@ -72,7 +73,7 @@
     </section>
     <section class="hotels-search">
       <h2 class="search-title-inner">Найдено гостиниц: 38</h2>
-      <form class="sorting-type">
+      <form action="https://echo.htmlacademy.ru" class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
           <option value="cheap">Сначала дешевые</option>
@@ -139,7 +140,7 @@
       </ul>
     </section>
     <section class="pages">
-      <h3 class="visually-hidden">Страницы</h3>
+      <h2 class="visually-hidden">Пагинация</h2>
       <button class="button" type="button">Загрузить еще</button>
       <ul class="pagination">
         <li class="pagination-item">
@@ -173,9 +174,9 @@
     </section>
 
     <section class="form">
-      <h3 class="form">Подпишитесь на рассылку</h3>
+      <h2 class="form">Подпишитесь на рассылку</h2>
       <p class="form">Только полезная информация и никакого спама,честное бойскаутское!</p>
-      <form class="subscribe">
+      <form action="https://echo.htmlacademy.ru" class="subscribe">
         <label for="e-mail-form"></label>
         <input type="text" id="e-mail-form" name="e-mail-form" placeholder="Ваш e-mail">
         <button class="button" type="submit">Подписаться</button>
