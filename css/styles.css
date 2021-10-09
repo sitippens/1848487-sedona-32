@@ -28,7 +28,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: red;
+  background-color: #ffffff;
 }
 
 .page-header {
@@ -46,5 +46,21 @@ body {
 }
 
 .main-index {
-  background-image: url("img/index/index-background.jpg");
+  color: #000000;
+  background-color: #FFFFFF;
+  background-image: url("../img/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 485px;
 }
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+
