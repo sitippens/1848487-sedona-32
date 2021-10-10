@@ -3,7 +3,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,17 +11,10 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
-}
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -45,12 +38,15 @@ body {
   text-decoration: none;
 }
 
-.main-index {
-  color: #000000;
-  background-color: #FFFFFF;
+.banner {
   background-image: url("../img/index/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 1200px 485px;
+}
+
+.main-index {
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 .advantages-list {
