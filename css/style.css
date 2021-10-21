@@ -369,7 +369,7 @@ input[type="text"] {
 .phone-number a{
   margin-top: 0;
   margin-right: 55px;
-  margin-left: 55px;a
+  margin-left: 55px;
   width: 720px;
   font-size: 40px;
   line-height: 40px;
@@ -417,13 +417,21 @@ input[type="text"] {
 
 .hotels-catalog {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.hotels-catalog-group {
-  margin-right: 38px;
-  display: flex;
-  flex-direction: column;
+.hotels-catalog-group-infrastructure {
+  width: 222px;
+  padding-right: 35px;
+}
+
+.hotels-catalog-group-accommodation {
+  width: 316px;
+  padding-right: 35px;
+}
+
+.hotels-catalog-group-price {
+  width: 288px;
+  padding: 0;
 }
 
 .hotels-catalog-title {
@@ -433,14 +441,42 @@ input[type="text"] {
   line-height: 26px;
 }
 
-input[type="checkbox"] {
+label[for=Pool] {
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
 }
 
-input[type="radio"] {
+label[for=Parking] {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+label[for=WI-FI] {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+label[for=Hotel] {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+label[for=Motel] {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+label[for=Apartments] {
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: 400;
@@ -494,14 +530,13 @@ input[type="radio"] {
 
 .search-title-inner {
   margin: 0;
-  margin-right: 180px;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
 }
 
 .select-control {
-  margin-right: 80px;
+  margin-right: 0px;
   width: 287px;
   height: 48px;
   font-family: PT Sans;
@@ -510,12 +545,29 @@ input[type="radio"] {
   line-height: 23px;
 }
 
+.sorting-type {
+  margin-left: auto;
+}
+
 .button-cards {
+  margin-left: 80px;
   margin-right: 8px;
   width: 48px;
   height: 48px;
   outline: 1px solid red;
+}
 
+.button-big {
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
+  outline: 1px solid red;
+}
+
+.button-list {
+  width: 48px;
+  height: 48px;
+  outline: 1px solid red;
 }
 
 .product-list {
@@ -525,14 +577,33 @@ input[type="radio"] {
 
 .product-card {
   list-style-type: none;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.product-card:last-child{
+  margin: 0;
+}
+
+.hotel-description {
+  margin-left: 36px;
+}
+
+.details-wrapper {
+  display: flex;
+}
+
+.details {
+  width: 150px;
+  margin-right: 8px;
 }
 
 a {
-  color: #000000;
   text-decoration: none;
 }
 
 .product-card-title {
+  margin: 0;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
@@ -542,14 +613,16 @@ a {
 }
 
 .product-card-description {
+  display: block;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+  margin-bottom: 31px;
 }
 
 .product-card-button-details {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 7px 30px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -562,7 +635,7 @@ a {
 
 .product-card-button-wishlist {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 7px 30px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -586,8 +659,14 @@ a {
   background-color: #7DB54F;
 }
 
+.button-more-wrapper {
+  margin-top: 0;
+  margin-left: 84px;
+  margin-right: 72px;
+  padding: 30px 215px 30px 204px;
+}
+
 .button-more {
-  margin: 30px 288px;
   font-family: PT Sans;
   text-align: center;
   width: 625px;
@@ -601,13 +680,34 @@ a {
   border: none;
 }
 
+.product-card-image {
+  display: block;
+}
+
+.rating-wrapper {
+  margin-left: auto;
+  width: 160px;
+  margin-right: 72px;
+  align-items: center;
+}
+
+.list-pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .pages-hotels {
+  padding-top: 30px;
+  margin-left: 72px;
   display: flex;
-  margin-bottom: 89px;
+}
+
+ul.pagination {
+  margin: 0;
 }
 
 .pagination {
-  margin-top: 30px;
   margin-left: 70px;
   padding: 0;
   display: flex;
@@ -645,14 +745,20 @@ a {
   font-weight: 700;
 }
 
-.hotels-shown {
+.hotels-shown-wrapper {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hotels-shown {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
 }
 
 .select-control-hotels {
+  margin-left: 51px;
   font-family: PT Sans;
   width: 160px;
   height: 48px;
@@ -662,7 +768,7 @@ a {
 
 .form-inner {
   margin: 0;
-  padding: 94px 200px;
+  padding: 89px 200px;
   text-align: center;
   color: #000000;
 }
