@@ -336,20 +336,18 @@ input[type="text"] {
   font-weight: 400;
 }
 
+.page-footer {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .page-footer-container {
   color: #000000;
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  
+  padding: 35px 72px;
   text-align: center;
 }
-
-.social {
-  width: 240px;
-}
-
 
 .social-list {
   text-decoration: none;
@@ -360,29 +358,25 @@ input[type="text"] {
   justify-content: space-between; 
 }
 
-.social-item {
-  width: 56px;
-  height: 44px;
-  margin-right: 8px; 
+.footer-col-1{
+  width: 352px;
 }
 
-.phone-number a{
-  margin-top: 0;
-  margin-right: 55px;
-  margin-left: 55px;
-  width: 720px;
+.footer-col-2 a{
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   text-decoration: none;
-  text-align: center;
   color: #000000;
+}
+
+.footer-col-2 {
+  width: 352px;
   text-align: center;
 }
 
-.website {
-  width: 240px;
-  margin-right: 72px;
+.footer-col-3 {
+  width: 352px;
 }
 
 .hotels-inner {
@@ -570,9 +564,14 @@ label[for=Apartments] {
   outline: 1px solid red;
 }
 
+.catalog-list {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .product-list {
   margin: 0;
-  padding-left: 70px;
+  padding: 0;
 }
 
 .product-card {
@@ -648,7 +647,7 @@ a {
 
 .product-card-button-added {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 7px 30px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -661,9 +660,7 @@ a {
 
 .button-more-wrapper {
   margin-top: 0;
-  margin-left: 84px;
-  margin-right: 72px;
-  padding: 30px 215px 30px 204px;
+  padding: 30px 216px 30px 215px;
 }
 
 .button-more {
@@ -687,8 +684,13 @@ a {
 .rating-wrapper {
   margin-left: auto;
   width: 160px;
-  margin-right: 72px;
   align-items: center;
+}
+
+.pages {
+  margin: 0;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .list-pagination {
@@ -699,7 +701,6 @@ a {
 
 .pages-hotels {
   padding-top: 30px;
-  margin-left: 72px;
   display: flex;
 }
 
