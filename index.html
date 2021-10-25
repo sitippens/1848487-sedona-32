@@ -119,4 +119,65 @@
     </div>
   </footer>
 </body>
+
+
+
+<!-- Модальное окно -->
+<div class="modal">
+  <div class="modal-title-wrapper">
+    <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+    <button class="close-button"><img src="img/index/close.svg"></button>
+  </div>
+  <form class="modal-form">
+    <div class="arrival-date-wrapper">
+      <label for="arrival-date">Дата заезда:</label>
+      <input type="date" id="arrival-date" name="arrival-date" value="2020-04-27">
+      <span class="arrival-date-description">Мы не можем отправить вас в прошлое.</span>
+    </div>
+    <div class="departure-date-wrapper">
+      <label for="departure-date">Дата выезда:</label>
+      <input type="date" id="departure-date" name="departure-date" value="2021-09-01">
+      <span class="departure-date-description">На эти даты есть свободные номера. Пока есть.</span>
+    </div>
+    <div class="residents">
+      <div class="adults-wrapper">
+        <label for="adults">Взрослые:</label>
+        <input type="number" class="number-modal" id="adults" name="adults" value="2">
+      </div>
+      <div class="children-wrapper">
+        <label for="children">Дети:</label>
+        <div class="info" data-title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+          <img src="img/index/info.svg">
+        </div>
+        <input type="number" class="number-modal" id="children" name="children" value="1">
+      </div>
+    </div>
+    <button class="button modal-search">Найти</button>
+  </form>  
+</div>
+
+
+<!-- И еще что-то -->
+<div class="wishlist">
+  <div class="wish-item-motel-wrapper">
+    <img src="img/index/hotel-2-small.png">
+    <div class="wish-item-motel">
+      <span class="wish-item-motel-title">Desert Quail Inn</span>
+      <span class="wish-item-motel-description">Мотель</span>
+    </div>
+    <button class="delete-icon"><img src="img/index/delete.svg" class="delete-icon"></button>
+  </div>
+  <div class="wish-item-apartments-wrapper">
+    <img src="img/index/hotel-3-small.png">
+    <div class="wish-item-apartments">
+      <span class="wish-item-motel-title">Villas at Poco Diablo</span>
+      <span class="wish-item-motel-description">Апартаменты</span>
+    </div>
+    <button class="delete-icon"><img src="img/index/delete.svg" class="delete-icon"></button>
+  </div>
+  <button class="all">Все избранные</button>
+</div>
 </html>
+
+
+
