@@ -120,6 +120,11 @@ body {
   border-radius: 10px;
 }
 
+.navigation-link:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
  .navigation-link:hover .navigation-icon-search {
   fill: #756257;
 }
