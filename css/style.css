@@ -218,11 +218,17 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: center;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 384px 384px 384px;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  list-style-type: none;
 }
 
 .advantage-item {
@@ -234,31 +240,42 @@ body {
 }
 
 .sub-advantages-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 384px 384px 384px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
   margin: 0;
   padding: 0;
   width: 1200px;
-  display: flex;
-  flex-wrap: wrap; 
   list-style-type: none;
   text-align: center;
 }
 
 .advantages-item-blue {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
   margin: 0;
+  padding: 80px 90px;
   color: #FFFFFF;
   background-color: #83B3D3;
   box-sizing: border-box;
   list-style-type: none;
 }
 
-.advantages-photo {
-  display: flex;
-  flex-wrap: wrap;
-  width: 800px;
-  height: 384px;
+.advantages-photo-town {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.advantages-photo-bridge {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .advantages-item-white {
@@ -272,14 +289,16 @@ body {
 }
 
 .advantages-item-grey {
+  width: 400px;
+  height: 384px;
   margin: 0;
   padding: 80px 90px;
   color: rgba(51, 51, 51, 1);
-  width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
   box-sizing: border-box;
   list-style-type: none;
 }
+
 .advantages-item-lightblue { 
   margin: 0;
   padding: 80px 90px;
@@ -289,7 +308,6 @@ body {
   box-sizing: border-box;
   list-style-type: none;
 }
-
 .advantages-title {
   margin: 0;
   padding-bottom: 25px;
@@ -714,19 +732,23 @@ label[for=Apartments] {
 }
 
 .catalog-list {
+  margin-top: 100px;
   padding-left: 72px;
   padding-right: 72px;
 }
 
 .product-list {
+  display: grid;
+  grid-template-rows: 120px 120px 120px 120px;
+  grid-row-gap: 58px;
   margin: 0;
   padding: 0;
 }
 
 .product-card {
   list-style-type: none;
-  display: flex;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 180px 680px 160px;
 }
 
 .product-card:last-child{
@@ -735,14 +757,18 @@ label[for=Apartments] {
 
 .hotel-description {
   margin-left: 36px;
+  width: 680px;
+  display: grid;
+  grid-template-rows: 32px 91px;
 }
 
 .details-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 151px 520px 160px;
 }
 
 .details {
-  width: 150px;
+  width: 151px;
   margin-right: 8px;
 }
 
@@ -831,6 +857,7 @@ a {
 }
 
 .rating-wrapper {
+  display: grid;
   margin-left: auto;
   width: 160px;
   align-items: center;
