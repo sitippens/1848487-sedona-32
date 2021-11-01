@@ -468,6 +468,7 @@ input[type="text"]:focus {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap; 
+  padding-top: 12px;
 }
 
 .footer-social-link {
@@ -664,7 +665,7 @@ label[for=Apartments] {
   display: flex;
   flex-wrap: nowrap;
   margin: 0;
-  padding: 45px 70px;
+  padding: 44px 72px 42px 72px;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
@@ -713,15 +714,63 @@ label[for=Apartments] {
   outline: 1px solid red;
 }
 
+.divider-1 {
+  margin: 0;
+  position: absolute;
+  width: 1056px;
+  height: 0px;
+  border: 1px solid #E6E6E6;
+  transform: rotate(180deg);
+}
+
+.divider-2 {
+  margin: 0;
+  position: absolute;
+  width: 1056px;
+  top: 176px;
+  height: 0px;
+  border: 1px solid #E6E6E6;
+  transform: rotate(180deg);
+}
+
+.divider-3 {
+  margin: 0;
+  position: absolute;
+  width: 1056px;
+  top: 355px;
+  height: 0px;
+  border: 1px solid #E6E6E6;
+  transform: rotate(180deg);
+}
+
+.divider-4 {
+  margin: 0;
+  position: absolute;
+  width: 1056px;
+  top: 533px;
+  height: 0px;
+  border: 1px solid #E6E6E6;
+  transform: rotate(180deg);
+}
+
+.divider-5 {
+  margin: 0;
+  position: absolute;
+  width: 1056px;
+  top: 710px;
+  height: 0px;
+  border: 1px solid #E6E6E6;
+  transform: rotate(180deg);
+}
+
 .catalog-list {
-  margin-top: 100px;
+  position: relative;
   padding-left: 72px;
   padding-right: 72px;
 }
 
 .product-list {
   display: grid;
-  grid-row-gap: 58px;
   margin: 0;
   padding: 0;
 }
@@ -731,6 +780,8 @@ label[for=Apartments] {
   display: grid;
   grid-template-columns: 180px 644px 160px;
   grid-column-gap: 36px;
+  padding-top: 28px;
+  padding-bottom: 30px;
 }
 
 .product-card:last-child{
@@ -738,8 +789,8 @@ label[for=Apartments] {
 }
 
 .hotel-description {
-  width: 680px;
   display: grid;
+  grid-column: 2/3;
 }
 
 .details-wrapper {
@@ -834,28 +885,48 @@ a {
 
 .product-card-image {
   display: block;
+  grid-column: 1/2;
 }
 
 .rating-wrapper {
   display: grid;
-  margin-top: auto;
   margin-left: auto;
   width: 160px;
-  height: 37px;
   text-align: center;
-  align-items: center;
-  background-color: #F2F2F2;
-  border-radius: 4px;
-  
+  grid-column: 3/4;
+}
+
+.rating-stars-4 {
+  background-image: url("../img/catalog/star-4.svg");
+  background-repeat: no-repeat;
+  width: 91px;
+  height: 17px;
+}
+
+.rating-stars-3 {
+  background-image: url("../img/catalog/star-3.svg");
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 17px;
+}
+
+.rating-stars-2 {
+  background-image: url("../img/catalog/star-2.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 17px;
 }
 
 .rating {
+  margin-top: 63px;
   text-transform: uppercase; 
+  background-color: #F2F2F2;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  padding-bottom: 10px;
-  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .pages {
