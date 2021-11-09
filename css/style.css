@@ -150,6 +150,18 @@ main {
   outline: none;
 }
 
+.navigation-link-button {
+  position: relative;
+  display: block;
+  padding: 6px 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
 .navigation-link-icon {
   position: relative;
   display: block;
@@ -218,7 +230,7 @@ main {
   border-radius: 50%;
 }
 
-.navigation-item-button .navigation-link-main {
+.navigation-link-button {
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-size: 16px;
@@ -231,18 +243,19 @@ main {
   text-align: center;
   box-sizing: border-box;
   padding-top: 9px;
+  outline-offset: -1px;
 }
 
-.navigation-item-button:hover .navigation-link-main {
+.navigation-link-button:hover  {
   background-color: rgba(97, 80, 72, 1);
 }
 
-.navigation-item-button:focus .navigation-link-main {
+.navigation-link-button:focus  {
   background: #615048;
   outline: 3px solid #83B3D3;
 }
 
-.navigation-item-button:active .navigation-link-main {
+.navigation-link-button:active  {
   background-color: rgba(97, 80, 72, 1);
   color: rgba(255, 255, 255, 0.3);
   outline: none;
@@ -592,7 +605,7 @@ main {
 .button-subscribe {
   font-family: PT Sans;
   width: 200px;
-  height: 62px;
+  height: 60px;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -621,7 +634,7 @@ main {
 }
 
 .e-mail-form {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   margin-top: 0;
   padding-left: 23px;
   width: 600px;
@@ -633,13 +646,14 @@ main {
   line-height: 26px;
   font-weight: 400;
   border: none;
+  box-sizing: border-box;
 }
 
-.e-mail-form:hover:placeholder-shown {
+.e-mail-form:hover {
   background-color: #E5E5E5;
 }
 
-.e-mail-form:focus:placeholder-shown {
+.e-mail-form:focus {
   background-color: #E5E5E5;
   outline: 3px solid #83B3D3;
 }
@@ -690,14 +704,14 @@ main {
 }
 
 .footer-social-link:focus {
-  fill: rgba(104, 162, 202, 1);
+  color: rgba(104, 162, 202, 1);
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
 .footer-social-link:active {
-  fill: rgba(104, 162, 202, 1);
+  color: rgba(104, 162, 202, 1);
   opacity: 0.3;
   outline: none;
 }
@@ -809,34 +823,93 @@ main {
 }
 
 .breadcrumbs {
+  margin-top: 0;
   margin-bottom: 45px;
   padding: 0;
   display: flex;
-  max-width: 111px;
-  justify-content: space-between;
+  max-width: 128px;
   list-style-type: none;
 }
 
-.breadcrumbs:hover {
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-pic {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  top: 0px;
+  margin: auto;
+}
+
+.breadcrumbs-item:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs:focus {
+.breadcrumbs-link:focus {
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-.breadcrumbs:active {
+.breadcrumbs-link:active {
   opacity: 0.3;
   outline: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs-item:nth-child(2) {
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:nth-child(2):hover {
+  opacity: 0;
+}
+
+.breadcrumbs-item:nth-child(2):focus {
+  opacity: 0;
+}
+
+.breadcrumbs-item:nth-child(2):active {
+  opacity: 0;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.breadcrumbs-link-hotels {
+   position: relative;
+  display: block;
+  padding: 3px 4px;
+}
+
+.breadcrumbs-link-hotels:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link-hotels:focus {
+  outline: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.breadcrumbs-item-hotels:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.breadcrumbs-link {
+  position: relative;
+  display: block;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #FFFFFF;
+  width: 28px;
+  height: 27px;
 }
 
 .hotels-catalog {
@@ -881,6 +954,7 @@ main {
 .range-bar {
   position: absolute;
   height: 4px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .range-toggle {
@@ -965,14 +1039,14 @@ main {
 }
 
 .catalog-filter-input:focus {
-  outline: 2px solid #FFFFFF;
+  outline: 3px solid #81B3D2;
+  outline-offset: -5px;
   box-sizing: border-box;
   box-shadow: 0px 0px 0px 3px #81B3D2;
 }
 
 .catalog-filter-input:active {
   background: #756257;
-  outline: 2px solid #FFFFFF;
 }
 
 #max-price.catalog-filter-input {
@@ -1191,11 +1265,14 @@ main {
 }
 
 .hotel-description {
+  position: relative;
   display: grid;
   grid-column: 2/3;
 }
 
 .details-wrapper {
+  position: absolute;
+  top: 32px;
   display: grid;
   grid-template-columns: 151px 160px 353px;
   grid-column-gap: 8px;
@@ -1205,7 +1282,12 @@ main {
   width: 151px;
 }
 
-a {
+.link-title {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  padding: 10px 16px 10px 15px;
+  height: 51px;
   text-decoration: none;
 }
 
@@ -1216,20 +1298,23 @@ a {
   font-weight: 700;
   line-height: 31px;
   text-decoration: none;
-  color: #000000;
 }
 
 .product-card-title:hover {
   color: rgba(117, 98, 87, 1);
 }
 
-.product-card-title:focus {
+.link-title {
+  color: rgba(117, 98, 87, 1);
+}
+
+.link-title:focus {
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
-.product-card-title:active {
+.link-title:active {
   opacity: 0.3;
   outline: none;
 }
@@ -1283,7 +1368,8 @@ a {
 
 .product-card-button-wishlist:hover {
   background-color: rgba(104, 162, 202, 1);
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
+  outline-offset: -1px;
 }
 
 .product-card-button-wishlist:focus {
@@ -1314,7 +1400,7 @@ a {
 }
 
 .product-card-button-added:focus {
-  background-color: rgba(117, 98, 87, 1);
+  background-color: rgba(108, 158, 66, 1);
   outline: 3px solid #756257;
 }
 
@@ -1343,6 +1429,7 @@ a {
   background-color: rgba(131, 179, 211, 1);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-more:hover {
@@ -1364,15 +1451,16 @@ a {
   grid-column: 1/2;
 }
 
-.product-card-image:hover {
+.product-card-link:hover {
   opacity: 0.6;
 }
 
-.product-card-image:focus {
+.product-card-link:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: -1px;
 }
 
-.product-card-image:active {
+.product-card-link:active {
   opacity: 0.3;
   outline: none;
 }
