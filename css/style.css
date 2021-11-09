@@ -85,9 +85,14 @@ main {
   padding: 0;
 }
 
-.navigation-item:nth-child(1) {
+.navigation-item-main {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item-main a {
   text-decoration: underline;
-  text-underline-offset: 21px;
+  text-underline-offset: 23px;
   text-decoration-thickness: 2px;
   text-decoration-color: rgba(117, 98, 87, 1);
 }
@@ -141,8 +146,7 @@ main {
 }
 
 .navigation-link-main:active {
-  color: #756257;
-  opacity: 0.3;
+  color: rgba(117, 98, 87, 0.3);
   outline: none;
 }
 
@@ -161,9 +165,6 @@ main {
   fill: #756257;
 }
 
-.navigation-link-icon:hover span {
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .navigation-link-icon:focus {
   fill: #756257;
@@ -242,7 +243,8 @@ main {
 }
 
 .navigation-item-button:active .navigation-link-main {
-  opacity: 0.3;
+  background-color: rgba(97, 80, 72, 1);
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
@@ -550,8 +552,8 @@ main {
 }
 
 .button-search:active {
-  background: rgba(97, 80, 72, 1);
-  opacity: 0.3;
+  background-color: rgba(97, 80, 72, 1);
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
@@ -614,7 +616,7 @@ main {
 
 .button-subscribe:active {
   background-color: #68A2CA;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
@@ -633,25 +635,23 @@ main {
   border: none;
 }
 
-.e-mail-form:hover {
+.e-mail-form:hover:placeholder-shown {
   background-color: #E5E5E5;
 }
 
-.e-mail-form:focus {
+.e-mail-form:focus:placeholder-shown {
   background-color: #E5E5E5;
   outline: 3px solid #83B3D3;
 }
 
-.e-mail-form:active {
+.e-mail-form:not(:placeholder-shown) {
   background: #FFFFFF;
   border: 2px solid #000000;
-  box-sizing: border-box;
 }
 
-.e-mail-form:error {
+.e-mail-form:error:placeholder-shown {
   background: #FFFFFF;
   border: 2px solid #FF5757;
-  box-sizing: border-box;
 }
 
 .page-footer {
