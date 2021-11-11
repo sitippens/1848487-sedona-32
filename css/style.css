@@ -61,15 +61,20 @@ main {
   background-color: #FFFFFF;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+.logo-link {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  }
+  margin: 0 auto;
+  display: block;
+  width: 138px;
+  height: 65px;
+}
+
+.logo-link:focus {
+  outline: 3px solid #83B3D3;
+}
 
 .navigation {
   display: flex;
@@ -740,11 +745,13 @@ main {
 }
 
 .phone {
+  padding: 15px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   text-decoration: none;
   color: #000000;
+  white-space: pre;
 }
 
 .phone:hover {
@@ -784,6 +791,7 @@ main {
 
 .footer-logo-link {
   position: absolute;
+  top: -15px;
   left: 215px;
   display: block;
   width: 160px;
@@ -930,7 +938,21 @@ main {
 .control {
   position: relative;
   display: block;
+  margin-top: 30px;
   padding-left: 39px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.control-input[type="checkbox"]:focus + span {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.control-input[type="radio"]:focus + span {
+  outline: 3px solid #83B3D3;
 }
 
 .control-mark {
@@ -969,9 +991,7 @@ main {
   height: 10px;
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M11 0 4.5 7.4 1.1 3.5 0 4.7l4.5 5.2 7.7-8.6L11 0Z' fill='%233F5E72'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h12.2v9.9H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-
 }
-
 
 .control-mark-radio {
   position: absolute;
@@ -1116,6 +1136,11 @@ main {
   border-radius: 4px 0 0 4px;
 }
 
+.catalog-filter-input::-webkit-outer-spin-button,
+.catalog-filter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .catalog-filter-input:hover {
   opacity: 0.6;
 }
@@ -1136,18 +1161,10 @@ main {
 }
 
 .hotels-catalog-title {
-  margin-bottom: 12px;
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-}
-
-.checkbox-label {
-  font-family: "PT Sans";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
 }
 
 .buttons-inner {
@@ -1232,7 +1249,7 @@ main {
 .select-control {
   margin-right: 0px;
   padding-left: 19px;
-  padding-right: 20px;
+  padding-right: 30px;
   width: 287px;
   height: 48px;
   font-family: PT Sans;
@@ -1246,12 +1263,13 @@ main {
   appearance: none;
   background-image: url(../img/catalog/dropdown.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 21px center;
 }
 
 .select-control:hover,
 .select-control:focus {
   outline: 2px solid #83B3D3;
+  outline-offset: -2px;
 }
 
 .select-control:active {
@@ -1277,6 +1295,7 @@ main {
 .button-cards:hover,
 .button-cards:focus {
   outline: 2px solid #83B3D3;
+  outline-offset: -2px;
 }
 
 .button-cards:active {
@@ -1296,6 +1315,7 @@ main {
 .button-big:hover,
 .button-big:focus {
   outline: 2px solid #83B3D3;
+  outline-offset: -2px;
 }
 
 .button-big:active {
@@ -1314,6 +1334,7 @@ main {
 .button-list:hover,
 .button-list:focus {
   outline: 2px solid #83B3D3;
+  outline-offset: -2px;
 }
 
 .button-list:active {
@@ -1394,6 +1415,7 @@ main {
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
+  outline-offset: -3px;
 }
 
 .link-title:active {
@@ -1428,6 +1450,7 @@ main {
 
 .product-card-button-details:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: 0;
 }
 
 .product-card-button-details:active {
@@ -1451,17 +1474,19 @@ main {
 .product-card-button-wishlist:hover {
   background-color: rgba(104, 162, 202, 1);
   outline: 1px solid #756257;
-  outline-offset: -1px;
+  outline-offset: 0;
 }
 
 .product-card-button-wishlist:focus {
   outline: 3px solid #756257;
+  outline-offset: 0;
 }
 
 .product-card-button-wishlist:active {
   background-color: rgba(104, 162, 202, 1);
   outline: 1px solid #756257;
   opacity: 0.3;
+  outline-offset: 0;
 }
 
 .product-card-button-added {
@@ -1484,6 +1509,7 @@ main {
 .product-card-button-added:focus {
   background-color: rgba(108, 158, 66, 1);
   outline: 3px solid #756257;
+  outline-offset: 0;
 }
 
 .product-card-button-added:active {
@@ -1520,6 +1546,7 @@ main {
 
 .button-more:focus {
   outline: 3px solid rgba(117, 98, 87, 1);
+  outline-offset: 0;
 }
 
 .button-more:active {
@@ -1539,7 +1566,7 @@ main {
 
 .product-card-link:focus {
   outline: 3px solid #83B3D3;
-  outline-offset: -1px;
+  outline-offset: 0;
 }
 
 .product-card-link:active {
@@ -1605,7 +1632,8 @@ ul.pagination {
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  padding: 15px 20px;
+  padding: 15px 15px;
+  text-align: center;
   color: #FFFFFF;
   background-color: rgba(131, 179, 211, 1);
   text-decoration: none;
@@ -1621,6 +1649,7 @@ ul.pagination {
 .pagination-link:focus {
   background-color: rgba(104, 162, 202, 1);
   outline: 3px solid #756257;
+  outline-offset: 0;
 }
 
 .pagination-link:active {
@@ -1633,7 +1662,8 @@ ul.pagination {
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  padding: 17px 20px;
+  padding: 15px 15px;
+  text-align: center;
   color: #000000;
   background-color: #F2F2F2;
   text-decoration: none;
@@ -1656,6 +1686,7 @@ ul.pagination {
 .select-control-hotels {
   margin-left: 51px;
   padding-left: 17px;
+  padding-right: 30px;
   font-family: PT Sans;
   width: 160px;
   height: 48px;
@@ -1664,12 +1695,13 @@ ul.pagination {
   appearance: none;
   background-image: url("../img/catalog/dropdown.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 21px center;
 }
 
 .select-control-hotels:hover,
 .select-control-hotels:focus {
   outline: 2px solid #83B3D3;
+  outline-offset: 0;
 }
 
 .select-control-hotels:active {
@@ -1693,11 +1725,11 @@ ul.pagination {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
+/*
 .modal-container-close {
   display: none;
 }
-
+*/
 .modal {
   position: relative;
   margin: auto;
@@ -1749,6 +1781,7 @@ ul.pagination {
 .close-button:focus {
   background-color: rgba(229, 229, 229, 1);
   outline: 3px solid #83B3D3;
+  outline-offset: 0;
 }
 
 .close-button:active {
@@ -1789,11 +1822,13 @@ ul.pagination {
 .input-date:focus {
   background-color: rgba(229, 229, 229, 1);
   outline: 3px solid #83B3D3;
+  outline-offset: 0;
 }
 
 .input-date:active {
   background: #FFFFFF;
   outline: 2px solid #000000;
+  outline-offset: 0;
   box-sizing: border-box;
 }
 
@@ -1878,12 +1913,34 @@ ul.pagination {
   appearance: none;
 }
 
-.number-modal::before {
+.modal-input-button-1 {
   position: absolute;
+  top: 375px;
+  left: 245px;
+  background: none;
+  width: 13px;
+  height: 1px;
+  cursor: pointer;
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='1' viewBox='0 0 13 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M0 0L0 1L13 1V0L0 0Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.modal-input-button-2 {
+  background: none;
+  width: 13px;
+  height: 1px;
+  cursor: pointer;
+}
+
+.modal-input-button-1::after {
+  position: absolute;
+  top: 375px;
+  left: 244px;
+  width: 13px;
+  height: 1px;
   content: "";
-  background-image: url("data:image/svg+xml,%3Csvg width='13' height='1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0v1h13V0H0Z' fill='%23000'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 13px 1px;
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='1' viewBox='0 0 13 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M0 0L0 1L13 1V0L0 0Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-color: #000000;
   }
 
 .number-modal:hover {
@@ -1893,11 +1950,13 @@ ul.pagination {
 .number-modal:focus {
   background-color: rgba(229, 229, 229, 1);
   outline: 3px solid #83B3D3;
+  outline-offset: 0;
 }
 
 .number-modal:active {
   background: #FFFFFF;
   outline: 2px solid #000000;
+  outline-offset: 0;
   box-sizing: border-box;
 }
 
@@ -1960,6 +2019,7 @@ ul.pagination {
 
 .modal-search:focus {
   outline: 3px solid rgba(117, 98, 87, 1);
+  outline-offset: 0;
 }
 
 .modal-search:active {
@@ -2001,6 +2061,7 @@ ul.pagination {
 
 .wish-item-wrapper:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: 0;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -2043,6 +2104,7 @@ ul.pagination {
 .delete-icon:focus {
   background-image: url("../img/index/delete-2.svg");
   outline: 3px solid #83B3D3;
+  outline-offset: 0;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -2076,6 +2138,7 @@ ul.pagination {
 
 .all:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: 0;
 }
 
 .all:active {

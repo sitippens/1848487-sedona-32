@@ -15,7 +15,7 @@
           <li class="navigation-item"><a class="navigation-link-main" href="about.html">О Седоне</a> </li>
           <li class="navigation-item-hotels"><a class="navigation-link-main" href="catalog.html">Гостиницы</a> </li>
         </ul>
-        <a href="index.html"><img class="logo" src="img/index/sedona.svg" width="138" height="70" alt="Логотип Седоны"></a>
+        <a class="logo-link" href="index.html"><img class="logo" src="img/index/sedona.svg" width="138" height="70" alt="Логотип Седоны"></a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item-icon"> <a class="navigation-link-icon" href="#">
             <svg class="navigation-icon-search" aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/></svg>
@@ -43,39 +43,33 @@
           <form action="https://echo.htmlacademy.ru" method="POST" class="hotels-catalog">
             <fieldset class="hotels-catalog-group-infrastructure">
               <legend class="hotels-catalog-title">Инфраструктура</legend>
-              <p class="control">
+              <label class="control" for="Pool">Бассейн
                 <input class="visually-hidden control-input" type="checkbox" id="Pool" name="Pool" checked>
                 <span class="control-mark"></span>
-                <label class="checkbox-label" for="Pool">Бассейн</label>
-              </p>
-              <p class="control">
+              </label>  
+              <label class="control"for="Parking">Парковка
                 <input class="visually-hidden control-input" type="checkbox" id="Parking" name="Parking" checked>
                 <span class="control-mark"></span>
-                <label class="checkbox-label" for="Parking">Парковка</label>
-              </p>
-              <p class="control">
+              </label>
+              <label class="control"for="WI-FI">WI-FI
                 <input class="visually-hidden control-input" type="checkbox" id="WI-FI" name="WI-FI">
-                <span class="control-mark"></span>
-                <label class="checkbox-label" for="WI-FI">WI-FI</label>      
-              </p>
+                <span class="control-mark"></span>     
+              </label>
             </fieldset>
             <fieldset class="hotels-catalog-group-accommodation">
               <legend class="hotels-catalog-title">Тип жилья</legend>
-              <p class="control">
+              <label class="control"for="Hotel">Гостиница
                 <input class="visually-hidden control-input" type="radio" id="Hotel" name="accommodation" value="Hotel" checked>
                 <span class="control-mark-radio"></span>
-                <label class="checkbox-label" for="Hotel">Гостиница</label>
-              </p>
-              <p class="control">
+              </label>
+              <label class="control"for="Motel">Мотель
                 <input class="visually-hidden control-input" type="radio" id="Motel" name="accommodation" value="Motel">
                 <span class="control-mark-radio"></span>
-                <label class="checkbox-label" for="Motel">Мотель</label>
-              </p>
-              <p class="control">
+              </label>
+              <label class="control"for="Apartments">Апартаменты
                 <input class="visually-hidden control-input" type="radio" id="Apartments" name="accommodation" value="Apartments">
                 <span class="control-mark-radio"></span>
-                <label class="checkbox-label" for="Apartments">Апартаменты</label> 
-              </p>     
+              </label>   
             </fieldset>
             <fieldset class="hotels-catalog-group-price">
               <legend class="hotels-catalog-title">Стоимость, ₽</legend>
