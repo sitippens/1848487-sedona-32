@@ -163,14 +163,18 @@
     <form class="modal-form">
       <div class="date-wrapper">
         <label class="date" for="arrival-date">Дата заезда:</label>
-        <input class="input-date" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
-        <button class="calendar"></button>
+        <input class="input-date" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
+        <button class="calendar">
+          <span class="visually-hidden">Календарь</span>
+        </button>
         <span class="arrival-date-description">Мы не можем отправить вас в прошлое.</span>
       </div>
       <div class="date-wrapper">
         <label class="date" for="departure-date">Дата выезда:</label>
-        <input class="input-date" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
-        <button class="calendar-2"></button>
+        <input class="input-date" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату" value="1 сентября 2021">
+        <button class="calendar-2">
+          <span class="visually-hidden">Календарь</span>
+        </button>
         <span class="departure-date-description">На эти даты есть свободные номера. Пока есть.</span>
       </div>
       <div class="residents">
@@ -190,7 +194,8 @@
         </div>
         <div class="children-wrapper">
           <label class="children" for="children">Дети:</label>
-          <div class="info" data-title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+          <div class="info"> 
+            <div class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
             <img src="img/index/info.svg">
           </div>
           <input type="number" class="number-modal" id="children" name="children" value="1">
