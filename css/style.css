@@ -92,7 +92,7 @@ main {
 
 .navigation-item-main a {
   text-decoration: underline;
-  text-underline-offset: 23px;
+  text-underline-offset: 25px;
   text-decoration-thickness: 2px;
   text-decoration-color: rgba(117, 98, 87, 1);
 }
@@ -106,12 +106,12 @@ main {
 
 .navigation-item-icon {
   position: relative;
-  margin-right: 3px;
+  margin-right: 5px;
   padding: 0;
 }
 
 .navigation-item-icon:nth-child(2) {
-  margin-right: 23px;
+  margin-right: 21px;
 }
 
 .navigation-item-icon:hover .wishlist {
@@ -121,7 +121,7 @@ main {
 .navigation-list {
   display: flex;
   flex-wrap: wrap; 
-  margin: -4px 72px 0 57px;
+  margin: 0px 72px 0 57px;
   padding: 0;
   list-style-type: none;
   align-items: center;
@@ -286,18 +286,30 @@ main {
 }
 
 .banner {
+  position: relative;
   background-image: url("../img/index/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: 1200px 485px;
+  background-size: cover;
   text-align: center;
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 78px;
+}
+
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url("data:image/svg+xml,%3Csvg width='1200' height='57' viewBox='0 0 1200 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z' fill='white'/%3E%3C/svg%3E%0A");
 }
 
 .description {
   margin: 0;
   text-align: center;  
-  padding-top: 63px;
+  padding-top: 62px;
   padding-right: 240px;
   padding-left: 240px;
   padding-bottom: 79px;
@@ -305,7 +317,7 @@ main {
 }
 
 .description-title {
-  margin: -10px;
+  margin: 0;
   margin-bottom: 32px;
   color: #000000;
   font-size: 30px;
@@ -334,6 +346,7 @@ main {
   margin: 0;
   width: 400px;
   padding: 80px 90px;
+  padding-top: 98px;
   box-sizing: border-box;
   color: #FFFFFF;
   background-color: rgba(131, 179, 211, 1);
@@ -370,7 +383,8 @@ main {
   position: relative;
   height: 384px;
   margin: 0;
-  padding: 80px 90px;
+  padding: 80px 80px;
+  padding-top: 184px;
   width: 400px;
   color: rgba(51, 51, 51, 1);
   background-color: rgba(255, 255, 255, 1);
@@ -382,7 +396,7 @@ main {
   position: absolute;
   left: 163px;
   right: 163px;
-  top: 87px;
+  top: 90px;
   bottom: 223px;
   content: "";
   background-image: url("../img/index/icon-2.svg");
@@ -393,7 +407,8 @@ main {
   position: relative;
   height: 384px;
   margin: 0;
-  padding: 80px 90px;
+  padding: 80px 84px;
+  padding-top: 98px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -406,6 +421,7 @@ main {
   height: 384px;
   margin: 0;
   padding: 80px 90px;
+  padding-top: 184px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -415,9 +431,9 @@ main {
 
 .advantages-item-grey-accommodation::before {
   position: absolute;
-  left: 167px;
+  left: 163px;
   right: 162px;
-  top: 85px;
+  top: 90px;
   bottom: 223px;
   content: "";
   background-image: url("../img/index/icon-1.svg");
@@ -429,6 +445,7 @@ main {
   height: 384px;
   margin: 0;
   padding: 80px 90px;
+  padding-top: 184px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -451,7 +468,8 @@ main {
   position: relative;
   height: 384px;
   margin: 0;
-  padding: 80px 90px;
+  padding: 80px 85px;
+  padding-top: 98px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
@@ -460,12 +478,8 @@ main {
 }
 
 .advantages-title-sub {
-  position: absolute;
-  top: 180px;
-  left: 75px;
-  width: 250px;
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 21px;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
@@ -474,12 +488,8 @@ main {
 }
 
 .advantages-title {
-  position: absolute;
-  top: 90px;
-  left: 75px;
-  width: 250px;
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 30px;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
@@ -488,7 +498,8 @@ main {
 }
 
 .advantages-title-blue {
-  margin: 20px;
+  margin: 0px;
+  margin-bottom: 31px;
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
@@ -497,38 +508,31 @@ main {
 }
 
 .advantages-description {
-  position: absolute;
-  top: 228px;
-  left: 74px;
-  width: 250px;
   margin: 0;
 }
 
 .advantages-description-blue {
-  position: absolute;
-  top: 233px;
-  left: 95px;
-  width: 220px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.advantages-description-blue:last-child {
+  margin-bottom: 0;
 }
 
 .advantages-number {
-  position: absolute;
-  top: 183px;
-  left: 75px;
-  width: 250px;
+  margin-bottom: 30px;
+  display: block;
 }
 
 .advantages-number-blue {
-  position: absolute;
-  top: 173px;
-  right: 75px;
-  width: 250px;
+  margin-bottom: 32px;
+  display: block;
 }
 
 .search {
   margin: 0;
-  padding-top: 75px;
+  padding-top: 90px;
   padding-right: 240px;
   padding-left: 240px;
   padding-bottom: 91px;
@@ -539,7 +543,7 @@ main {
 
 .search-title {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -552,13 +556,13 @@ main {
   font-weight: 400;
   line-height: 26px;
   margin-top: 0;
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 }
 
 .button-search {
   display: inline-block;
   width: 575px;
-  padding: 15px 20px;
+  padding: 12px 20px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
@@ -587,7 +591,7 @@ main {
 
 .form {
   margin: 0;
-  padding: 94px 200px 93px 200px;
+  padding: 94px 200px 94px 200px;
   text-align: center;
   color: #FFFFFF;
   background-image: url("../img/index/background.jpg");
@@ -604,8 +608,8 @@ main {
 }
 
 .form-description {
-  margin-top: 32px;
-  margin-bottom: 45px;
+  margin-top: 38px;
+  margin-bottom: 48px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -618,8 +622,7 @@ main {
 }
 
 .button-subscribe {
-  margin: 3px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   width: 200px;
   height: 60px;
   text-align: center;
@@ -651,7 +654,6 @@ main {
 
 .e-mail-form {
   font-family: "PT Sans", sans-serif;
-  margin-top: 3px;
   padding-left: 23px;
   width: 600px;
   height: 60px; 
@@ -698,8 +700,10 @@ main {
 }
 
 .social-list {
+  margin-left: -10px;
   text-decoration: none;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -801,7 +805,7 @@ main {
 
 .footer-logo-link {
   position: absolute;
-  top: -15px;
+  top: -13px;
   left: 215px;
   display: block;
   width: 160px;
@@ -827,7 +831,7 @@ main {
 }
 
 .hotels-inner {
-  padding: 33px 72px 70px 72px;
+  padding: 35px 72px 70px 72px;
   background-image: url("../img/catalog/catalog-background-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -861,7 +865,7 @@ main {
   margin-top: 5px;
   width: 12px;
   height: 12px;
-  background-image: url(../img/catalog/home.svg);
+  background-image: url("../img/catalog/home.svg");
   background-repeat: no-repeat;
 }
 
@@ -888,7 +892,7 @@ main {
   width: 5px;
   height: 8px;
   content: "";
-  background-image: url(../img/catalog/nav-link.svg);
+  background-image: url("../img/catalog/nav-link.svg");
   background-repeat: no-repeat;
 }
 
@@ -956,7 +960,7 @@ main {
   display: block;
   margin-top: 15px;
   padding-left: 39px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -1241,7 +1245,7 @@ background: #756257;
 }
 
 .button-submit {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -1271,7 +1275,7 @@ background: #756257;
 
 .button-reset {
   margin: 15px 37px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -1319,7 +1323,7 @@ background: #756257;
   padding-right: 30px;
   width: 287px;
   height: 48px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -1328,7 +1332,7 @@ background: #756257;
   box-sizing: border-box;
   border-radius: 4px;
   appearance: none;
-  background-image: url(../img/catalog/dropdown.svg);
+  background-image: url("../img/catalog/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 19px center;
 }
@@ -1592,7 +1596,7 @@ background: #756257;
 }
 
 .button-more {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   width: 625px;
   height: 55px;
@@ -1754,7 +1758,7 @@ ul.pagination {
   margin-left: 51px;
   padding-left: 17px;
   padding-right: 30px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   width: 160px;
   height: 48px;
   border-radius: 4px;
@@ -1870,7 +1874,7 @@ ul.pagination {
 
 .input-date {
   position: relative;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1911,7 +1915,7 @@ ul.pagination {
   position: absolute;
   top: 183px;
   right: 89px;
-  background-image: url(../img/index/calendar.svg);
+  background-image: url("../img/index/calendar.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
   border: none;
@@ -1941,7 +1945,7 @@ ul.pagination {
   position: absolute;
   top: 273px;
   right: 89px;
-  background-image: url(../img/index/calendar.svg);
+  background-image: url("../img/index/calendar.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
   border: none;
@@ -2007,7 +2011,7 @@ ul.pagination {
 
 .number-modal {
   position: relative;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
