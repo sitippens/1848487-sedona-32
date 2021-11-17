@@ -108,6 +108,7 @@ main {
 .navigation-list {
   display: flex;
   flex-wrap: wrap; 
+  max-width: 45%;
   margin: 0px 72px 0 57px;
   padding: 0;
   list-style-type: none;
@@ -157,18 +158,6 @@ main {
 .navigation-link:active {
   color: rgba(117, 98, 87, 0.3);
   outline: none;
-}
-
-.navigation-link-button {
-  position: relative;
-  display: block;
-  padding: 6px 12px;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  text-decoration: none;
 }
 
 .navigation-link-icon {
@@ -239,19 +228,21 @@ main {
 }
 
 .navigation-link-button {
+  position: relative;
+  display: block;
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   width: 160px;
-  height: 37px;
   background-color: rgba(117, 98, 87, 1);
   text-transform: uppercase;
   border-radius: 4px;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 9px;
+  padding: 8px 5px 9px 5px;
   outline-offset: -1px;
+  text-decoration: none;
 }
 
 .navigation-link-button:hover  {
@@ -369,14 +360,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 800px;
-  height: 384px;
+  background-color: rgba(131, 179, 211, 1);
 }
 
 .advantages-item-white {
   position: relative;
-  height: 384px;
   margin: 0;
-  padding: 80px 80px;
+  padding: 91px 80px;
   padding-top: 184px;
   width: 400px;
   color: rgba(51, 51, 51, 1);
@@ -398,9 +388,8 @@ main {
 
 .advantages-item-grey {
   position: relative;
-  height: 384px;
   margin: 0;
-  padding: 80px 84px;
+  padding: 110px 84px;
   padding-top: 98px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
@@ -411,9 +400,8 @@ main {
 
 .advantages-item-grey-accommodation {
   position: relative;
-  height: 384px;
   margin: 0;
-  padding: 80px 90px;
+  padding: 91px 90px;
   padding-top: 184px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
@@ -435,9 +423,8 @@ main {
 
 .advantages-item-grey-souvenirs {
   position: relative;
-  height: 384px;
   margin: 0;
-  padding: 80px 90px;
+  padding: 91px 90px;
   padding-top: 184px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
@@ -459,9 +446,8 @@ main {
 
 .advantages-item-lightblue { 
   position: relative;
-  height: 384px;
   margin: 0;
-  padding: 80px 85px;
+  padding: 110px 85px;
   padding-top: 98px;
   color: rgba(51, 51, 51, 1);
   width: 400px;
@@ -500,8 +486,13 @@ main {
   text-transform: uppercase;
 }
 
+.advantages-description:last-child {
+  margin-bottom: 0px;
+}
+
 .advantages-description {
   margin: 0;
+  margin-bottom: 28px;
 }
 
 .advantages-description-blue {
@@ -618,7 +609,6 @@ main {
 .button-subscribe {
   font-family: "PT Sans", sans-serif;
   width: 200px;
-  height: 60px;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -683,13 +673,12 @@ main {
 .page-footer {
   margin: 0 auto;
   width: 1200px;
-  height: 120px;
 }
 
 .page-footer-container {
   color: #000000;
   display: flex;
-  padding: 35px 72px;
+  padding: 35px 72px 45px 72px;
   text-align: center;
 }
 
@@ -749,7 +738,7 @@ main {
 }
 
 .footer-col-1 {
-  width: 352px;
+  width: 350px;
 }
 
 .phone {
@@ -759,7 +748,6 @@ main {
   font-weight: 400;
   text-decoration: none;
   color: #000000;
-  white-space: pre;
 }
 
 .phone:hover {
@@ -779,13 +767,13 @@ main {
 }
 
 .footer-col-2 {
-  width: 352px;
+  width: 356px;
   text-align: center;
 }
 
 .footer-col-3 {
   position: relative;
-  width: 352px;
+  width: 353px;
 }
 
 .footer-logo {
@@ -1463,16 +1451,15 @@ main {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 }
 
 .product-card-button-details {
   display: inline-block;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-align: center;
   width: 151px;
-  height: 37px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -1500,11 +1487,10 @@ main {
 
 .product-card-button-wishlist {
   display: inline-block;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-align: center;
   width: 160px;
-  height: 37px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -1536,11 +1522,10 @@ main {
 
 .product-card-button-added {
   display: inline-block;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-align: center;
   width: 160px;
-  height: 37px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -1672,11 +1657,11 @@ ul.pagination {
 }
 
 .pagination {
-  margin-left: 70px;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   list-style-type: none;
+  max-width: 50%;
 }
 
 .pagination-item {
@@ -1686,8 +1671,8 @@ ul.pagination {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 15px 15px;
   text-align: center;
   color: #FFFFFF;
@@ -1716,8 +1701,8 @@ ul.pagination {
 .pagination-current {
   display: block;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 15px 15px;
   text-align: center;
   color: #000000;
@@ -2224,6 +2209,9 @@ ul.pagination {
 
 .items-wrapper {
   border: 1px solid rgba(229, 229, 229, 1);
+  border-bottom: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   padding-top: 15px;
   padding-bottom: 6px;
 }
